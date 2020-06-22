@@ -1,2 +1,3 @@
 # Project_2_webmaster
-project developed in the webmaster course
+Project developed in the webmaster course
+Technologies: HTML & CSS

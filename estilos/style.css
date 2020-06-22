@@ -1,0 +1,360 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Oswald', sans-serif;
+}
+
+html,body{
+  height: 100%;
+}
+
+.center{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.clear{clear: both;}
+
+header{
+  padding: 20px 2% 35px 2%;
+  height: 130px;
+}
+
+header .logo{
+  float: left;
+}
+
+/* NAV DESKTOP */
+
+header nav.desktop{
+  float: right;
+  position: relative;
+  top: 40px;
+}
+
+header nav.desktop ul{
+  list-style-type: none;
+}
+
+header nav.desktop ul li{
+  float: left;
+  font-size: 23px;
+  padding: 0 30px;
+  font-style: italic;
+}
+
+header nav.desktop ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+/* NAV MOBILE */
+
+header nav.mobile{
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 130px;
+}
+
+header nav.mobile a.icon-menu{
+  position: absolute;
+  top: -70px;
+  right: 15px;
+}
+
+header nav.mobile ul{
+  list-style: none;
+  display: none;
+}
+
+header nav.mobile ul li{
+  background-color: white;
+  border-top: 1px solid black;
+  padding: 5px 0;
+  transition: 0.2s;
+}
+
+header nav.mobile ul li:hover{
+  background-color: rgb(233, 232, 232);
+}
+
+header nav.mobile ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+}
+
+/* SECTION 1 */
+
+section#section1{
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  background-color: black;
+  background-image: url('../imagens/bg.jpg');
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.text-banner{
+  padding: 70px;
+}
+
+.text-banner-single{
+  width: 314px;
+  height: 70px;
+  margin-top: 30px;
+  line-height: 70px;
+  font-style: italic;
+  text-transform: uppercase;
+  padding-left: 50px;
+  color: white;
+  font-size: 23px;
+  background-image: url('../imagens/box-text.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+  width: 200px;
+  position: relative;
+  line-height: 70px;
+  height: 70px;
+  right: 10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+  width: 170px;
+  position: relative;
+  height: 70px;
+  line-height: 70px;
+  right: 20px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4){
+	width: 320px;
+	font-size: 21px;
+	color: black;
+	position: relative;
+	left: -30px;
+	line-height: 70px;
+	background-image: url('../imagens/box-white-text.png');
+}
+
+/* SECTION 2 */
+
+section#section2{
+  padding: 90px 2% 100px 2%;
+  width: 100%;
+}
+
+section#section2 .flex{
+  align-items: center;
+}
+
+section#section2 .flex  .border-sec2{
+  border-bottom: 3px solid black;
+  width: calc(50% - 147px);
+}
+
+section#section2 h1{
+  font-size: 27px;
+  padding: 0 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+section#section2 .cars-spotlight{
+  padding: 0 8px;
+  margin-top: 50px;
+  width: 33.3%;
+}
+
+section#section2 .cars-spotlight .img-car{
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+section#section2 .cars-spotlight .img-car img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+section#section2 .cars-spotlight h1{
+  font-size: 20px;
+  margin-top: 8px;
+  text-align: left;
+  padding: 0;
+}
+
+section#section2 .cars-spotlight p{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #353535;
+  font-size: 15px;
+  font-style: italic;
+}
+
+section#section2 .cars-spotlight button{
+  width: 150px;
+  line-height: 40px;
+  background-color: #EB2D2D;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px solid #B21E1E;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+/* SECTION 3 */
+
+section#section3 .servicos{
+  background: #242424;
+  padding: 90px 8%;
+  width: 50%;
+  color: white;
+}
+
+section#section3 .servicos h1,
+section#section3 .depoimentos h1{
+  font-size: 30px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+section#section3 .servicos ul{
+  list-style-position: inside;
+  margin-top: 20px;
+}
+
+section#section3 .servicos button{
+  width: 150px;
+  line-height: 40px;
+  background-color: #EB2D2D;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px solid #B21E1E;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+  position: relative;
+  left: 250px;
+  bottom: 45px;
+}
+
+section#section3 .depoimentos{
+  background: #EB2D2D;
+  width: 50%;
+  color: white;
+  padding: 90px 8%;
+}
+
+section#section3 .depoimentos h1{
+  margin-bottom: 20px;
+}
+
+section#section3 .depoimentos p{
+  font-size: 22px;
+}
+
+section#section3 .depoimentos p:nth-of-type(2){
+  color: black;
+  text-align: right;
+}
+
+section#section3 .depoimentos .flex{
+  position: relative;
+  top: 30px;
+  left: 25px;
+}
+
+section#section3 .depoimentos .flex a{
+  width: 14px;
+}
+
+section#section3 .depoimentos .flex a:nth-of-type(1){
+  margin-right: 40px;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1024px){
+  section#section3 .servicos{
+    text-align: center;
+  }
+
+  section#section3 .servicos ul{
+    text-align: left;
+    margin-left: 25%;
+  }
+  section#section3 .servicos button{
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  header nav.desktop{
+    display: none;
+  }
+
+  header nav.mobile{
+    display: block;
+  }
+  
+  section#section1{
+		background-size: cover;
+		background-position: 100px center;
+		height: 80vh;
+	}
+}
+
+@media screen and (max-width: 580px){
+  section#section2 .flex  .border-sec2{
+    border-bottom: 3px solid black;
+    width: calc(50% - 120px);
+  }
+
+  section#section2 h1{
+    font-size: 22px;
+    padding: 0 20px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  section#section2 .cars-spotlight{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  section#section2 .cars-spotlight:nth-of-type(1){
+    margin-top: 70px;
+  }
+
+  section#section2 .cars-spotlight h1{
+    text-align: center;
+  }
+
+}
