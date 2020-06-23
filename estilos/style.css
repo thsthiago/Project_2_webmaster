@@ -242,8 +242,9 @@ section#section3 .depoimentos h1{
 }
 
 section#section3 .servicos ul{
-  list-style-position: inside;
   margin-top: 20px;
+  margin-left: 20px;
+  list-style-position: inside;
 }
 
 section#section3 .servicos button{
@@ -297,6 +298,123 @@ section#section3 .depoimentos .flex a:nth-of-type(1){
   margin-right: 40px;
 }
 
+/* SECTION 4 */
+
+section#section4{
+  padding: 90px 2% 50px 2%;
+  width: 100%;
+}
+
+section#section4 .flex{
+  align-items: center;
+}
+
+section#section4 .flex  .border-sec2{
+  border-bottom: 3px solid black;
+  width: calc(50% - 67px);
+}
+
+section#section4 h1{
+  font-size: 27px;
+  padding: 0 20px;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section#section4 form{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section#section4 form .w100{
+  width: 100%;
+  margin: 30px 0;
+}
+
+section#section4 form .w50{
+  width: 100%;
+  display: flex;
+}
+
+section#section4 form .w50 input{
+  width: 48%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+section#section4 form .w50 input:nth-of-type(1){
+  margin-right: 4%;
+}
+
+section#section4 form .w100 input{
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+section#section4 form .w100 textarea{
+  width: 100%;
+  resize: vertical;
+  height: 140px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+section#section4 form input[type=submit]{
+  width: 150px;
+  line-height: 40px;
+  background-color: #EB2D2D;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px solid #B21E1E;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+/* FOOTER */
+
+footer{
+  background: #242424;
+  padding: 40px 2%;
+}
+
+footer .flex{
+  justify-content: space-between;
+
+}
+
+footer nav.footer-desktop ul{
+  list-style-type: none;
+}
+
+footer nav.footer-desktop ul li{
+  float: left;
+  font-size: 18px;
+  padding: 0 35px;
+  font-style: italic;
+}
+
+footer nav.footer-desktop ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+footer p{
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+}
+
 /* RESPONSIVO */
 
 @media screen and (max-width: 1024px){
@@ -306,7 +424,9 @@ section#section3 .depoimentos .flex a:nth-of-type(1){
 
   section#section3 .servicos ul{
     text-align: left;
-    margin-left: 25%;
+    width: 40%;
+    min-width: 220px;
+    margin: 10px auto;
   }
   section#section3 .servicos button{
     position: static;
@@ -327,10 +447,100 @@ section#section3 .depoimentos .flex a:nth-of-type(1){
 		background-size: cover;
 		background-position: 100px center;
 		height: 80vh;
-	}
+  }
+
+  section#section2 .cars-spotlight{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  section#section2 .cars-spotlight .img-car:nth-of-type(1){
+    margin-top: 30px;
+  }
+  
+  section#section3 .servicos{
+    width: 100%;
+  }
+
+  section#section3 .servicos ul{
+    text-align: left;
+    margin: 10px auto;
+  }
+
+  section#section3 .depoimentos{
+    width: 100%;
+  }
+
+  section#section4 form{
+    margin-top: 40px;
+  }
+
+  section#section4 form .w100{
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  section#section4 form .w50{
+    width: 100%;
+    display: block;
+  }
+  
+  section#section4 form .w50 input:nth-of-type(1){
+    margin-right: 0%;
+  }
+
+  section#section4 form .w50 input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  footer .center .flex p{
+    text-align: center;
+  }
+
+  footer .center .flex{
+    display: block;
+  }
+
+  footer nav.footer-desktop{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 580px){
+  .text-banner{
+    padding: 30px;
+  }
+  
+  .text-banner-single{
+    width: 240px;
+    height: 70px;
+    margin-top: 30px;
+    line-height: 70px;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-left: 50px;
+    color: white;
+    font-size: 18px;
+    background-image: url('../imagens/box-text.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .text-banner .text-banner-single:nth-of-type(4){
+    width: 270px;
+    font-size: 21px;
+    color: black;
+    position: relative;
+    left: -30px;
+    line-height: 70px;
+    background-image: url('../imagens/box-white-text.png');
+  }
+
   section#section2 .flex  .border-sec2{
     border-bottom: 3px solid black;
     width: calc(50% - 120px);
@@ -344,17 +554,25 @@ section#section3 .depoimentos .flex a:nth-of-type(1){
   }
 
   section#section2 .cars-spotlight{
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
     text-align: center;
   }
 
   section#section2 .cars-spotlight:nth-of-type(1){
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   section#section2 .cars-spotlight h1{
     text-align: center;
   }
 
+  section#section3 .servicos ul{
+    text-align: left;
+    margin: 10px auto;
+    width: 45%;
+    min-width: 220px;
+    position: static;
+    transform: translateX(0%);
+  }
 }
