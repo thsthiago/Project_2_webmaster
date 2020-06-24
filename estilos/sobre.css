@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  border-bottom: 3px solid #EB2D2D;
+}
+
+section#section-sobre{
+  padding: 60px 2% 50px 2%;
+}
+
+section#section-sobre .center .flex:nth-of-type(1){
+  margin-bottom: 40px;
+}
+
+section#section-sobre .center .flex:nth-of-type(1){
+  align-items: center;
+}
+
+section#section-sobre .center .flex  .border-sec2{
+  border-bottom: 2px solid black;
+  width: calc(50% - 54px);
+}
+
+section#section-sobre .center .flex h1{
+  font-size: 27px;
+  padding: 0 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+section#section-sobre .desc-principal{
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+section#section-sobre .desc-principal .imgsobre{
+  width: 100%;
+  padding-top: 60%;
+  background-color: rgb(223, 217, 217);
+}
+
+section#section-sobre .desc-principal .descricao-sobre1{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+  line-height: 30px;
+}
+
+section#section-sobre .desc-principal .descricao-sobre1 h2{
+  margin-bottom: 10px;
+}
+
+section#section-sobre .desc-principal .flex .imgsobre2{
+  width: 30%;
+  padding-top: 30%;
+  background-color: #ccc;
+}
+
+section#section-sobre .desc-principal .flex p{
+  padding: 20px 0px 0px 20px;
+  width: 70%;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 580px){
+  section#section-sobre .desc-principal .flex .imgsobre2{
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 20px;
+  }
+
+  section#section-sobre .desc-principal .flex p{
+    padding: 0px;
+    width: 100%;
+  }
+}

@@ -2,12 +2,13 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Veiculo para venda</title>
     <meta name="author" content="Thiago Cabral">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Description from my site">    
     <meta name="keywords" content="keywords, separated, for, comma">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/cars.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   </head>
   <body>
@@ -40,14 +41,63 @@
       </div><!--center-->
     </header>
 
-    <section id="section1">
+    <section id="venda-car">
       <div class="center">
-        <div class="text-banner">
-          <div class="text-banner-single">Consultoria</div>
-          <div class="text-banner-single">Compra</div>
-          <div class="text-banner-single">Venda</div>
-          <div class="text-banner-single">e-mail@hotmail.com</div>
-        </div><!--text-banner-->
+        <div class="flex1">
+          <div class="border-sec2"></div>
+          <h1>VEÍCULO PARA VENDA</h1>
+          <div class="border-sec2"></div>
+        </div><!--flex-->
+        <div class="veiculos">
+          <a href="index.html">HOME</a><span>></span><a href="venda.html">VENDA</a><span>></span>
+          <a style="color:#EB2D2D" href="cars-test.html">VEÍCULOS DE TESTE</a>
+        <div class="flex">
+          <div class="descricao-carro1">
+            <div class="img-carro">
+              <img src="imagens/carro1.jpg">
+            </div>
+            <div class="flex segunda-desc">
+              <a href=#><img class="seta" src="imagens/arrow-left.png"></a>
+              <div class="galeria"><img src="imagens/carro1.jpg"></div>
+              <div class="galeria"><img src="imagens/carro1.jpg"></div>
+              <div class="galeria"><img src="imagens/carro1.jpg"></div>
+              <a href=#><img class="seta" src="imagens/arrow-right.png"></a>
+            </div><!--flex-->
+          </div>
+          <div class="desc-carro">
+            <h1>R$20.000,00</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae 
+              dolor elementum, aliquet diam non, placerat risus. Suspendisse fringilla 
+              sollicitudin velit sed elementum
+            </p>
+            <a href="#"><button>Entre em contato</button></a>
+          </div>
+        </div><!--flex-->
+        </div>
+      </div><!--center-->
+    </section>
+
+    <section id="section4">
+      <div class="center">
+        <div class="flex">
+          <div class="border-sec2"></div>
+          <h1>Contato</h1>
+          <div class="border-sec2"></div>
+        </div><!--flex-->
+        <form method="POST">
+          <div class="w100">
+            <input type="text" name="name" placeholder="Nome*">
+          </div><!--w100-->
+          <div class="w50">
+            <input type="email" name="email" placeholder="E-mail*">
+            <input type="text" name="telefone" placeholder="Telefone*">
+          </div><!--w50-->
+          <div class="w100">
+            <textarea placeholder="Mensagem*"></textarea>
+          </div><!--w100-->
+          <input type="submit" name="acao" value="Enviar">
+        </form>
       </div><!--center-->
     </section>
 
@@ -84,59 +134,6 @@
             <a href="cars-test.html"><button>Mais detalhes</button></a>
           </div><!--cars-spotlight-->
         </div><!--flex-->
-      </div><!--center-->
-    </section>
-
-    <section id="section3">
-      <div class="center">
-        <div class="flex">
-          <div class="servicos">
-            <h1>Serviços</h1>
-            <ul>
-              <li>Compra</li>
-              <li>Venda</li>
-              <li>Consultoria de veículos</li>
-              <li>Indicação de Mecânicos e peças</li>
-            </ul>
-            <a href="#"><button>Saiba mais</button></a>
-          </div><!--servicos-->
-          <div class="depoimentos">
-            <h1>Depoimentos</h1>
-            <p>
-              “O Rafael foi muito atencioso, me buscou no aeroporto e garantiu 
-              toda comodidade e conforto no almoço, no transfer, na visita ao 
-              veículo e durante o test-drive”
-            </p>
-            <div class="flex">
-              <a href="#"><img src="imagens/arrow-left.png"></a>
-              <a href="#"><img src="imagens/arrow-right.png"></a>
-            </div>
-            <p>João da silva</p>
-          </div><!--depoimentos-->
-        </div><!--flex-->
-      </div><!--center-->
-    </section>
-
-    <section id="section4">
-      <div class="center">
-        <div class="flex">
-          <div class="border-sec2"></div>
-          <h1>Contato</h1>
-          <div class="border-sec2"></div>
-        </div><!--flex-->
-        <form method="POST">
-          <div class="w100">
-            <input type="text" name="name" placeholder="Nome*">
-          </div><!--w100-->
-          <div class="w50">
-            <input type="email" name="email" placeholder="E-mail*">
-            <input type="text" name="telefone" placeholder="Telefone*">
-          </div><!--w50-->
-          <div class="w100">
-            <textarea placeholder="Mensagem*"></textarea>
-          </div><!--w100-->
-          <input type="submit" name="acao" value="Enviar">
-        </form>
       </div><!--center-->
     </section>
 
